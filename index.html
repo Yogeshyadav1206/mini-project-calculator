@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+       <input type="text" id="display" readonly>
+       <div class="btn-container">
+        <button class="btn" style="background-color: red;" onclick="currdisplay='';document.querySelector('#display').value=currdisplay">C</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'1';document.querySelector('#display').value=currdisplay">1</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'2';document.querySelector('#display').value=currdisplay">2</button>
+        <button class="btn" style="background-color:rgb(95, 95, 241)" onclick="currdisplay=currdisplay+'+';document.querySelector('#display').value=currdisplay">+</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'3';document.querySelector('#display').value=currdisplay">3</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'4';document.querySelector('#display').value=currdisplay">4</button>
+        <button class="btn" style="background-color:rgb(95, 95, 241)" onclick="currdisplay=currdisplay+'-';document.querySelector('#display').value=currdisplay">-</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'5';document.querySelector('#display').value=currdisplay">5</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'6';document.querySelector('#display').value=currdisplay">6</button>
+        <button class="btn" style="background-color:rgb(95, 95, 241)" onclick="currdisplay=currdisplay+'*';document.querySelector('#display').value=currdisplay">*</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'7';document.querySelector('#display').value=currdisplay">7</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'8';document.querySelector('#display').value=currdisplay">8</button>
+        <button class="btn" style="background-color:rgb(95, 95, 241)" onclick="currdisplay=currdisplay+'/';document.querySelector('#display').value=currdisplay">/</button>
+        <button class="btn" style="background-color:rgb(48, 196, 134)" onclick="currdisplay=eval(currdisplay);document.querySelector('#display').value=currdisplay">=</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'9';document.querySelector('#display').value=currdisplay">9</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'0';document.querySelector('#display').value=currdisplay">0</button>
+        <button class="btn" onclick="currdisplay=currdisplay+'.';document.querySelector('#display').value=currdisplay">.</button>
+       </div>
+    </div>
+    <script>
+        let currdisplay='';
+        document.querySelector('#display').value=currdisplay;
+    </script>
+</body>
+</html>
